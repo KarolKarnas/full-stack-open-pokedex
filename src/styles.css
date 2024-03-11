@@ -61,15 +61,6 @@ footer {
 	text-transform: capitalize;
 	background-color: #eee;
 }
-.pokemon-title {
-	position: absolute;
-	color: red;
-	top: 0;
-	width: 100%;
-	text-align: center;
-	font-style: italic;
-	/* background-color: #eee; */
-}
 
 .links {
 	display: flex;
