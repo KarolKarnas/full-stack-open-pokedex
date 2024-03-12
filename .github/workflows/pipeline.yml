@@ -32,6 +32,7 @@ jobs:
           wait-on: http://localhost:5000
       - uses: superfly/flyctl-actions/setup-flyctl@master      
       - name: deploy
+        id: deploy
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ' '), '#skip') }}
         run: flyctl deploy --remote-only
         env:
